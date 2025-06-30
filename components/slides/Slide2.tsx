@@ -15,9 +15,8 @@ export function Slide2({ slide }: Slide2Props) {
   const [charCount, setCharCount] = useState(0)
   const [status, setStatus] = useState("idle")
   const [items, setItems] = useState<string[]>([])
-
  
-  // setItems(slide.items)
+  setItems(slide.items)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
