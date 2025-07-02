@@ -64,16 +64,6 @@ export function Slide3({ slide }: Slide3Props) {
     })
   }
 
-  const formatDate = (date: Date) => {
-    return date.toLocaleDateString('en-US', { 
-      month: 'short', 
-      day: 'numeric',
-      hour: '2-digit', 
-      minute: '2-digit',
-      hour12: true 
-    })
-  }
-
   const filteredTodos = todos.filter(todo => {
     if (filter === "active") return !todo.completed
     if (filter === "completed") return todo.completed
