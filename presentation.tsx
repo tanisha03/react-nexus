@@ -23,10 +23,10 @@ export default function Presentation() {
 
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
-      if (e.key === "ArrowRight" || e.key === " ") {
+      if (e.key === "ArrowRight") {
         nextSlide()
       } else if (e.key === "ArrowLeft") {
-        prevSlide()
+        prevSlide() 
       }
     }
 
@@ -101,7 +101,7 @@ export default function Presentation() {
 
       {/* Keyboard shortcuts hint */}
       <div className="fixed bottom-4 right-4 text-xs text-muted-foreground bg-muted px-3 py-2 rounded">
-        Use ← → or Space to navigate
+        Use ← → to navigate
       </div>
     </div>
   )
